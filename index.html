@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>1</title>
+</head>
+<body>
+	<script type="text/javascript">
+		//ES5
+		function f(a) {
+			return function(b){
+				return (a+b);
+			}
+		}
+		console.log(f(2)(3));
+		
+		//ES6
+		let f2 = (a) => (b) => a+b;
+		console.log(f2(2)(3));
+	</script>
+</body>
+</html>
